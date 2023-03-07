@@ -7,7 +7,7 @@ const AddPost = ({ onAdd }) => {
 
 const handleOnSubmit = (e) => {
     e.preventDefault();
-    onAdd(e.target.titulo.value,e.target.subtitulo.value);
+    onAdd(e.target.titulo.value);
     e.target.titulo.value = "";
     e.target.subtitulo.value = "";
 }
@@ -17,7 +17,6 @@ const handleOnSubmit = (e) => {
       <ContentForm onSubmit={handleOnSubmit}>
         <TextForm></TextForm>
         <Input placeholder="Título" name="titulo" />
-        <Input placeholder="Subtítulo" name="subtitulo" />
         <Button onSubmit={handleOnSubmit}>
             <TextButton>Add</TextButton>
         </Button>

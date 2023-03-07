@@ -102,7 +102,10 @@ export const ContentImage = styled.img`
 
 ` 
 
-export const ContentIcons = styled.div`
+export const ContentIcons = styled.button`
+
+  border: none;
+  background-color: transparent;
 
 :hover{
     cursor: pointer;

@@ -19,7 +19,7 @@ import {
 import { FaPen, FaPlusCircle, FaTrash } from 'react-icons/fa';
 
 
-function Post({ name, body, id, onDelete, image }) {
+function Post({ name, body, id, onDelete, image, onEdit }) {
 
     return (
         <Container>
@@ -31,7 +31,7 @@ function Post({ name, body, id, onDelete, image }) {
                 </HeaderPost>
 
                 <ContentBody>
-                    <Button onClick={onDelete}>
+                    <Button onClick={onEdit}>
                         <TextButton>Sharing</TextButton>
                     </Button>
                     <ContentImage src={image} />
